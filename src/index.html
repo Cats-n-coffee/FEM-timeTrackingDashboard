@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <main>
+    <article class="profile-timeranges">
+      <div class="profile">
+        <img src="../images/image-jeremy.png" alt="avatar">
+        <div class="profile-name">
+          <span>Report for</span>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="timeranges">
+        <a href="#" class="time-link" data-timevalue="daily">Daily</a>
+        <a href="#" class="time-link" data-timevalue="weekly">Weekly</a>
+        <a href="#" class="time-link" data-timevalue="monthly">Monthly</a>
+      </div>
+    </article>
+    <div class="dashboard-cards">
+
+      <article class="card">
+        <img src="../images/icon-work.svg" alt="work-icon">
+        <div class="card-content">
+          <div class="card-content-title">
+            <h2>Work</h2>
+            <button>
+              <img src="../images/icon-ellipsis.svg" />
+            </button>
+          </div>
+          <div class="card-content-numbers">
+            <p>32hrs</p>
+            <p>Last week - 36hrs</p>
+          </div>
+        </div>
+        
+      </article>
+
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+</body>
+</html>
