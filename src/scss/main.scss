@@ -29,18 +29,41 @@ html, body {
     font-size: 18px;
 }
 
+body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(2, auto);
+    background-color: var(--very-dark-blue);
+
+    @media screen and (min-width: 1100px) {
+        grid-template-rows: minmax(0, 1fr) auto;
+    }
+}
+
 main {
     height: 100%;
     width: 100%;
-    background-color: var(--very-dark-blue);
     padding: 3em 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1100px) {
         flex-direction: row;
+    }
+}
+
+footer {
+    color: var(--pale-blue);
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    padding: 1em 0;
+    max-height: 50px;
+
+    a, a:visited {
+        color: var(--desaturated-blue);
     }
 }
 
