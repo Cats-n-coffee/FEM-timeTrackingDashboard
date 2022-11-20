@@ -32,6 +32,7 @@ const createOneCard = async ({ title, current, previous }) => {
   cardTitle.textContent = `${title}`;
 
   const cardControls = document.createElement("button");
+  cardControls.setAttribute("aria-label", "More actions");
   const cardControlsIcon = document.createElementNS(
     "http://www.w3.org/2000/svg",
     "svg"
